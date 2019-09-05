@@ -35,6 +35,7 @@ public protocol BottomPopupAttributesDelegate: class {
     func getPopupDismissDuration() -> Double
     func shouldPopupDismissInteractivelty() -> Bool
     func getDimmingViewAlpha() -> CGFloat
+    func shouldDismissOnTap() -> Bool
 }
 
 public struct BottomPopupConstants {
@@ -44,4 +45,5 @@ public struct BottomPopupConstants {
     static let kDefaultDismissDuration = 0.5
     static let dismissInteractively = true
     static let kDimmingViewDefaultAlphaValue: CGFloat = 0.5
+    static let dismissOnTap: Bool = true
 }

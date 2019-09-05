@@ -100,4 +100,8 @@ open class BottomPopupViewController: UIViewController, BottomPopupAttributesDel
     open func getDimmingViewAlpha() -> CGFloat {
         return BottomPopupConstants.kDimmingViewDefaultAlphaValue
     }
+    
+    open func shouldDismissOnTap() -> Bool {
+        return BottomPopupConstants.dismissOnTap
+    }
 }
