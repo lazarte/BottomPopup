@@ -65,7 +65,7 @@ private extension BottomPopupPresentationController {
         dimmingView.backgroundColor = UIColor.black.withAlphaComponent(0)
         
         let tapGesture = UITapGestureRecognizer(target: self, action: #selector(handleTap(_:)))
-        dimmingView.isUserInteractionEnabled = true
+        dimmingView.isUserInteractionEnabled = dismissOnTap
         dimmingView.addGestureRecognizer(tapGesture)
     }
 }
